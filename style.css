@@ -58,8 +58,8 @@ body{
     border-bottom: 3px solid transparent;
 }
 
-nav a:hover,
-nav a.active{
+.navbar a:hover,
+.navbar a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
@@ -100,10 +100,10 @@ nav a.active{
     }
 } */
 
-section{
+/* section{
     min-height: 100vh;
     padding: 5rem 9% 5rem;
-}
+} */
 
 .home{
     display: flex;
@@ -221,7 +221,125 @@ span{
     right: -8;
     animation: cursor 0.6s infinite;
 }
+.resume{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.resume h4{
+    color: #6d6464;
+}
 
+.resume .progress{
+    height: 6px;
+    margin-left: 50px;
+}
+.resume #skills h4{
+    padding-left: 50px;
+    cursor: pointer;
+}
+.resume #skills h4:hover{
+    color: #ffff;
+    transition: 0.3s ease;
+}
+.resume #skills h2{
+    padding-bottom: 10px;
+}
+.resume h1, .footer h4{
+  position: relative;
+}
+
+.resume h1:after , .footer h4:after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #b74b4b;
+  transition: width 1s ease-in-out;
+}
+
+.resume h1:hover:after , .footer h4:hover:after{
+  width: 150px;
+  margin-bottom: -5px;
+}
+/* project */
+.project_filter {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding: 10px;
+    border: 2px solid #b74b4b;
+    border-radius: 5px;
+   
+}
+
+.project_filter a {
+    font-size: 16px;
+    font-weight: bold; 
+    cursor: pointer;
+    margin: 0 5px;
+    color: #ffff;
+    text-decoration: none;
+}
+.project_filter a:hover {
+    color: #b74b4b;
+}
+/* Footer */
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .col-md-4 {
+  flex-basis: 33.33%;
+  padding: 20px;
+}
+
+.footer h4 {
+  margin-top: 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #b74b4b;
+}
+
+.copyright {
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  clear: both;
+}
 @keyframes cursor{
     to{
         border-left: 3px solid #b74b4b;
@@ -244,6 +362,22 @@ span{
     
 }
 
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.3 ;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.progress, h4, h2{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+
+}
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
