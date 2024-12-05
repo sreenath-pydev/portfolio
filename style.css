@@ -22,21 +22,6 @@ body{
     color: white;
 }
 
-/* fheader{
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-} */
-
 .navbar .logo{
     font-size: 5rem;
     color: #b74b4b;
@@ -67,43 +52,6 @@ body{
     padding-left: 430px;
     right: 0px;
 }
-/* @media(max-width:995px){
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #b74b4b;
-        border-bottom: 3px solid #b74b4b;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-    }
-
-    nav.active{
-        display: block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #b74b4b;
-    }
-} */
-
-/* section{
-    min-height: 100vh;
-    padding: 5rem 9% 5rem;
-} */
 
 .home{
     display: flex;
@@ -206,7 +154,7 @@ span{
 }
 
 .typing-text span::before{
-    content: "software Developer";
+    content: "Django Developer";
     color: #b74b4b;
     animation: words 20s infinite;
 }
@@ -267,6 +215,7 @@ span{
 /* project */
 .project_filter {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly; 
     align-items: center; 
@@ -276,7 +225,7 @@ span{
    
 }
 
-.project_filter a {
+.project_filter span {
     font-size: 16px;
     font-weight: bold; 
     cursor: pointer;
@@ -284,9 +233,121 @@ span{
     color: #ffff;
     text-decoration: none;
 }
-.project_filter a:hover {
+.project_filter span:hover {
     color: #b74b4b;
 }
+.project-filter-link {
+    color: black; 
+    text-decoration: none;
+  }
+  
+  .project-filter-link.actives {
+    color: #b74b4b;
+    font-weight: bold; 
+  }
+
+.card {
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+/* connect me */
+#contact-me {
+  background-color: black;
+  
+  text-align: center;
+}
+
+#contact-form {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  border: 1px solid #b74b4b;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form input, #contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#contact-form button[type="submit"] {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #b74b4b;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#contact-form button[type="submit"]:hover {
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 25px #b74b4b;
+}
+#contact-form .error {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    animation: l15 1s infinite linear;
+  position: absolute;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  display: none;
+    
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    grid-area: 1/1;
+    border-radius: 50%;
+    background: #f03355;
+    -webkit-mask:repeating-linear-gradient(#000 0 5px,#0000 0 10px);
+    animation: l35 1.5s infinite;
+  }
+  .loader:after {
+    -webkit-mask:repeating-linear-gradient(#0000 0 5px,#000 0 10px);
+    --s:-1;
+  }
+  @keyframes l35 {
+    0%,
+    10% {transform: translate(0) rotate(0)}
+    35% {transform: translate(calc(var(--s,1)*50%)) rotate(0)}
+    66% {transform: translate(calc(var(--s,1)*50%)) rotate(calc(var(--s,1)*180deg))}
+    90%,
+    100% {transform: translate(0) rotate(calc(var(--s,1)*180deg))}
+  }
+  
 /* Footer */
 .footer {
   background-color: black;
@@ -348,16 +409,19 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Python Developer";
+        content: "Full Stack Developer";
     }
     21%, 40%{
-        content: "Web Developer";
+        content: "Python Developer";
     }
     41%, 60%{
-        content: "Data Science";
+        content: "Web Developer";
     }
     61%, 80%{
-        content: "ML";
+        content: "Django Developer";
+    }
+    81%, 100%{
+        content: "Software Engineer";
     }
     
 }
@@ -408,5 +472,8 @@ span{
     }
     .navbar .collapse{
         padding-left: 0;
+    }
+    .loader{
+        top: 35%;
     }
 }
