@@ -1,0 +1,55 @@
+{
+    "projects"  : {
+        "Full Stack": [
+            {
+                "title": "E-Commerce Website",
+                "description": "A scalable platform for online shopping with user authentication and payment integration.",
+                "technologies": ["Python", "Django", "React", "PostgreSQL"],
+                "link": "https://example.com/fullstack1",
+                "Image":"main.jpg"
+            },
+            {
+                "title": "Social Media App",
+                "description": "A real-time messaging and posting app.",
+                "technologies": ["Node.js", "Express", "React", "MongoDB"],
+                "link": "https://example.com/fullstack2",
+                "Image":"main.jpg"
+            }
+        ],
+        "Frontend": [
+            {
+                "title": "Portfolio Website",
+                "description": "A personal portfolio showcasing projects and skills.",
+                "technologies": ["HTML", "CSS", "JavaScript"],
+                "link": "https://example.com/frontend1",
+                "Image":"main.jpg"
+            }
+        ],
+        "Machine Learning": [
+            {
+                "title": "Image Classification",
+                "description": "A model that classifies images into predefined categories.",
+                "technologies": ["Python", "TensorFlow", "Keras"],
+                "link": "https://example.com/ml1",
+                "Image":"main.jpg"
+            }
+        ],
+        "Data Science": [
+            {
+                "title": "Sales Analysis",
+                "description": "A dashboard for analyzing sales data using pandas and matplotlib.",
+                "technologies": ["Python", "Pandas", "Matplotlib"],
+                "link": "https://example.com/datascience1",
+                "Image":"main.jpg"
+            },
+            {
+                "title": "Sales Analysis",
+                "description": "A dashboard for analyzing sales data using pandas and matplotlib.",
+                "technologies": ["Python", "Pandas", "Matplotlib"],
+                "link": "https://example.com/datascience1",
+                "Image":"main.jpg"
+            }
+        ]
+    }
+    
+}
