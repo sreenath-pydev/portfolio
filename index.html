@@ -12,56 +12,131 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-dark mt-5">
             <div class="container">
-              <a class="navbar-brand logo" href="index.html">SREENATH</a>
+              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link text-white " id="home-link" aria-current="page" href="#home">About</a>
+                    <a class="nav-link  " id="about-link" aria-current="page" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" id="resume-link"  href="#resume">Resume</a>
+                    <a class="nav-link " id="resume-link"  href="#resume">Resume</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" id="projects-link" href="#projects">Projects</a>
+                    <a class="nav-link " id="projects-link" href="#projects">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" id="contact-link" aria-disabled="true" href="#contact">Contact</a>
+                    <a class="nav-link " id="contact-link" aria-disabled="true" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
             </div>
         </nav>
     </header>
-  <!-- Home Section --> 
-   <section id="home">
-    <div class="row p-5 mb-5" data-aos="fade-up" >
-        <div class="col home-img">
-            <img src="LinkedinProfile.png" alt="">
+   
+  <div class="row container-fluid">
+    <div class="col-lg-3 left-sidebar ">
+      <!--left side section-->
+      <div class="row">
+        <div class="col-lg-12 ">
+          <img src="LinkedinProfile.png" alt="Profile Image">
+          <a class="name" href="index.html">Sreenath</a>
+          <!--Theme switch-->
+          <label for="theme" class="theme"  id="theme">
+            <span class="theme__toggle-wrap">
+              <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark" onclick="Changetheme()">
+              <span class="theme__fill"></span>
+              <span class="theme__icon">
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+              </span>
+            </span>
+          </label>
+          <!--Theme switch End-->
         </div>
-        <div class=" col home-content">
-            <h1>Hi, It's <span>Sreenath</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I’m a Full Stack Developer skilled in Python, Django, React, and web technologies like HTML, CSS, and JavaScript. I build dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs. Passionate about solving problems and constantly learning, I strive to deliver high-quality solutions that drive results</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/sreenath-pydev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/sreenath-pydev" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://x.com/sreenathkk00" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/__sreenath_____/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=SreenathPydev@gmail.com" class="btn" target="_blank">Hire me</a>
+        <div class="col-lg-12">
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sreenath-pydev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/sreenath-pydev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/sreenathkk00" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/__sreenath_____/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
+        <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=SreenathPydev@gmail.com" class="btn" target="_blank">Hire me</a> -->
+        </div>
+      </div>  
     </div>
+    <!--Right side section-->
+    <div class="col-lg-9 container">
+   <!-- about Section -->
+   <section id="about">
+    <div class="row p-5 mb-5 mt-5 container">
+      <div class="col-lg-12 about-content">
+        <h1>Hi, It's <span>Sreenath</span></h1>
+        <h3 class="typing-text">I'm a <span></span></h3>
+        <p>
+          I’m a Full Stack Developer skilled in Python, Django, React, and web technologies like HTML, CSS, and JavaScript. I build dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs. Passionate about solving problems and constantly learning, I strive to deliver high-quality solutions that drive results.
+        </p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=SreenathPydev@gmail.com" class="btn" target="_blank">Hire me</a>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 p-5">
+    <h1>What I'm Doing</h1>
+    <div class="row  row-cols-1 row-cols-md-2 g-4">
+      <div class="col-lg-6">
+        <div class="card">
+          <img src="LinkedinProfile.png" class="card-img-top img-fluid" alt="Description of the service">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Building responsive and modern websites using HTML, CSS, JavaScript, Django, and React.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <img src="LinkedinProfile.png" class="card-img-top img-fluid" alt="Description of the service">
+          <div class="card-body">
+            <h5 class="card-title">API Integration</h5>
+            <p class="card-text">Integrating APIs to provide seamless and powerful functionalities for your applications.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <img src="LinkedinProfile.png" class="card-img-top img-fluid" alt="Description of the service">
+          <div class="card-body">
+            <h5 class="card-title">E-commerce Solutions</h5>
+            <p class="card-text">Creating custom e-commerce platforms with advanced features like cart, payment, and user management.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <img src="LinkedinProfile.png" class="card-img-top img-fluid" alt="Description of the service">
+          <div class="card-body">
+            <h5 class="card-title">Custom Software</h5>
+            <p class="card-text">Developing tailored software solutions to meet your specific business needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </section>
-  <!-- Home Section End--> 
+  <!-- about Section End--> 
 
   <!--Resume Section-->
   <section id="resume">
     <div class=" row  container p-5 mt-5 resume" >
       <!--Education and Experience Section-->
-      <div class="col" id="education">
+      <div class="col-lg-12" id="education">
         <div class="row pb-5">
             <div class="col">
               <h1 class="pb-3"><b>Education</b></h1>
@@ -79,11 +154,15 @@
                 <li class="pb-3"><h3>Python & Data Science Intern</h3>
                <h4>Ecraftz Info Solutions <br> Kozhikode, Kerala • 2023</h4></li>
               </ul>
+              <div class="download">
+                <a href="Sreenath_Resume .pdf" class="btn" target="_blank">Download CV</a>
+              </div>
             </div>
+            
         </div>
       </div>
       <!--Skills Section-->
-      <div class="col" id="skills">
+      <div class="col-lg-12 mt-5" id="skills">
       <h1 class="pb-3"><b>Skills</b></h1>
       <!-- Languages Section -->
       <h2>Languages</h2>
@@ -146,7 +225,7 @@
 
   <!-- Project Section -->
   <section id="projects">
-    <div class="row container p-5 "  style="margin: auto;">
+    <div class="row  p-5 mt-5"  style="margin: auto;">
       <div class="project_filter mb-5">
         <span class="project-filter-link actives" onclick="filterProjects('all', this)">All Projects</span>
         <span class="project-filter-link" onclick="filterProjects('Full Stack', this)">Full Stack</span>
@@ -156,16 +235,16 @@
       </div>
       
       <!--projects cards-->
-      <div id="projects-container" class="row "></div>
+      <div id="projects-container" class="row"></div>
     </div>
   </section>
   <!-- Project Section End-->
   
   <!--Connect me Section -->
-  <section id="contact">
-    <div class="container p-5" >
+  <section id="contact" class="container p-5">
+    
       <h2>Get in Touch</h2>
-      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" style="position: relative;">
         <input type="hidden" name="access_key" value="9b5f76de-2bae-4405-bbf1-d466df17e154">
         <div class="row">
               <div class="col-md-6">
@@ -180,43 +259,48 @@
           <textarea id="message" name="message" placeholder="Your Message"></textarea>
           <small class="error pb-2" id="message-error"></small>
           <button class="btn" type="submit">Send Message</button>
-      </form>
-      <p id="success-message" class="p-5" style="color: green; display: none;">Your message has been sent successfully!</p>
-      <div class="loader " id="loader" style="display: none;"></div>
-    </div>
+          <!-- Success Message -->
+          <p id="success-message" class="p-5" style="color: green; display: none;">Your message has been sent successfully!</p>
+          <!-- Loader -->
+          <div class="loader " id="loader" ></div>
+        </form>
+      
+   
   </section>
   <!--Connect me Section End-->
-
-  <!--Footer Section-->
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h4>About Me</h4>
-              <p>Passionate Python developer skilled in writing clean, efficient code and solving problems. Proactive, detail-oriented, and eager to tackle challenges while staying updated on the latest technologies and contributing to innovative projects.</p>
-            </div>
-            <div class="col-md-4">
-              <h4>Get in Touch</h4>
-              <ul>
-                <li><a href="https://www.linkedin.com/in/sreenath-pydev/">LinkedIn</a></li>
-                <li><a href="https://github.com/sreenath-pydev">GitHub</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h4>Follow Me</h4>
-              <ul>
-                <li><a href="https://www.instagram.com/__sreenath_____/">Instagram</a></li>
-                <li><a href="https://x.com/sreenathkk00">Twitter</a></li>
-                <li><a href="https://www.facebook.com">Facebook</a></li>
-              </ul>
-            </div>
+    </div>
+    <!--Footer Section-->
+    <footer class="footer container col-lg-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>About Me</h4>
+            <p>Passionate Python developer skilled in writing clean, efficient code and solving problems. Proactive, detail-oriented, and eager to tackle challenges while staying updated on the latest technologies and contributing to innovative projects.</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Get in Touch</h4>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/sreenath-pydev/">LinkedIn</a></li>
+              <li><a href="https://github.com/sreenath-pydev">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Follow Me</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/__sreenath_____/">Instagram</a></li>
+              <li><a href="https://x.com/sreenathkk00">Twitter</a></li>
+              <li><a href="https://www.facebook.com">Facebook</a></li>
+            </ul>
           </div>
         </div>
-        <div class="copyright">
-          <p>&copy; 2024 Sreenath Portfolio. All rights reserved.</p>
-        </div>
-      </footer>
-  <!--Footer Section End-->
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Sreenath Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+<!--Footer Section End-->
+  </div>
+  
   <!--Scripts-->
         <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

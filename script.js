@@ -1,7 +1,7 @@
 // !Select all the navigation links and sections
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 const sections = [
-  document.querySelector('#home'),
+  document.querySelector('#about'),
   document.querySelector('#resume'),
   document.querySelector('#contact'),
   document.querySelector('#projects'),
@@ -43,7 +43,7 @@ navLinks.forEach(link => {
 // Initial setup: Check the hash in the URL and display the corresponding section
 document.addEventListener('DOMContentLoaded', () => {
   const hash = window.location.hash.substring(1); // Remove the '#' symbol
-  const defaultSection = 'home';
+  const defaultSection = 'about';
 
   // Show the section based on the hash or the default section
   const targetId = hash || defaultSection;
@@ -141,6 +141,7 @@ function filterProjects(category, clickedElement) {
   clickedElement.classList.add('actives');
 }
 
+// !Contact form
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
   const nameInput = document.getElementById('name');
@@ -229,3 +230,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+//! Change theme
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.querySelector(".theme__toggle");
+  const savedTheme = localStorage.getItem("theme");
+
+  // Apply the saved theme on page load
+  if (savedTheme === "dark") {
+      document.body.classList.add("dark-theme");
+      themeToggle.checked = true; 
+  } else {
+      document.body.classList.remove("dark-theme");
+      themeToggle.checked = false; 
+  }
+
+  // Add event listener to toggle theme
+  themeToggle.addEventListener("change", () => {
+      if (themeToggle.checked) {
+          document.body.classList.add("dark-theme");
+          localStorage.setItem("theme", "dark"); // Save theme state
+      } else {
+          document.body.classList.remove("dark-theme");
+          localStorage.setItem("theme", "light"); // Save theme state
+      }
+  });
+});
