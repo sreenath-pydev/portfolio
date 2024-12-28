@@ -2,52 +2,109 @@
     "projects"  : {
         "Full Stack": [
             {
-                "title": "E-Commerce Website",
-                "description": "A scalable platform for online shopping with user authentication and payment integration.",
-                "technologies": ["Python", "Django", "React", "PostgreSQL"],
-                "link": "https://example.com/fullstack1",
-                "Image":"main.jpg"
+                "title": "Netflix Clone",
+                "description": "A Netflix clone project.",
+                "technologies": ["React.js", "HTML", "CSS", "JavaScript"],
+                "link": "http://netflixclonebucket.s3-website.eu-north-1.amazonaws.com/",
+                "Image":"images/project/netflix_clone.png"
             },
             {
-                "title": "Social Media App",
-                "description": "A real-time messaging and posting app.",
-                "technologies": ["Node.js", "Express", "React", "MongoDB"],
-                "link": "https://example.com/fullstack2",
-                "Image":"main.jpg"
-            }
-        ],
-        "Frontend": [
+                "title": "Pawsome Picksome:",
+                "description": "A scalable platform for online shopping with user authentication and payment integration.",
+                "technologies": ["Python", "Django", "React", "PostgreSQL"],
+                "link": "https://github.com/sreenath-pydev/PawsomePicks_E-com",
+                "Image":"images/project/pawsomepicksome.png"
+            },
             {
                 "title": "Portfolio Website",
                 "description": "A personal portfolio showcasing projects and skills.",
                 "technologies": ["HTML", "CSS", "JavaScript"],
-                "link": "https://example.com/frontend1",
-                "Image":"main.jpg"
+                "link": "https://sreenath-pydev.github.io/sreenath.portfolio",
+                "Image":"images/project/portfolio.png"
+            }  
+        ],
+        "Frontend": [
+            
+            {
+                "title": "Web-based Calculator",
+                "description": "This project is a simple web-based calculator.",
+                "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+                "link": "https://github.com/sreenath-pydev/calculator-project",
+                "Image":"images/project/calculator.png"
+            },
+            {
+                "title": "LetsTrade Website",
+                "description": "A Stockmarket trading institution website.",
+                "technologies": ["HTML", "CSS", "JavaScript"],
+                "link": "https://github.com/sreenath-pydev/LetsTrade",
+                "Image":"images/project/Letstrade.png"
+            },
+            {
+                "title": "Ecommerce for Organic Food",
+                "description": "Ecommerce for Organic Food website.",
+                "technologies": ["Node.js", "Express", "React", "MongoDB"],
+                "link": "https://github.com/sreenath-pydev/Ecommerce_project",
+                "Image":"images/project/organic_food.png"
+            }
+        ],
+        "Backend": [
+            {
+                "title": "Django Authentication Project",
+                "description": "A Django authentication project.",
+                "technologies": ["Python", "Django", "HTML", "CSS", "Google Authentication"],
+                "link": "https://github.com/sreenath-pydev/user_management",
+                "Image":"images/project/django_auth.png"
+            },
+            {
+                "title": "CRUD Operations Application",
+                "description": "A Django CRUD operations application.",
+                "technologies": ["Python", "Django", "HTML", "CSS"],
+                "link": "https://github.com/sreenath-pydev/crud_operations",
+                "Image":"images/project/crud_operation.png"
+            },
+            {
+                "title": "Movie Management Web Application",
+                "description": "A Django movie management web application.",
+                "technologies": ["Python", "Django", "HTML", "CSS", "PostgreSQL"],
+                "link": "https://github.com/sreenath-pydev/model_relations",
+                "Image":"images/project/movie_management.png"
             }
         ],
         "Machine Learning": [
             {
-                "title": "Image Classification",
-                "description": "A model that classifies images into predefined categories.",
-                "technologies": ["Python", "TensorFlow", "Keras"],
-                "link": "https://example.com/ml1",
-                "Image":"main.jpg"
-            }
-        ],
-        "Data Science": [
-            {
-                "title": "Sales Analysis",
-                "description": "A dashboard for analyzing sales data using pandas and matplotlib.",
-                "technologies": ["Python", "Pandas", "Matplotlib"],
-                "link": "https://example.com/datascience1",
-                "Image":"main.jpg"
+                "title": "Movie Recommendation System",
+                "description": "This project recommends movies based on user preferences.",
+                "technologies": ["Python", "Pandas", "Keras", "NumPy", "scikit-learn"],
+                "link": "https://github.com/sreenath-pydev/Machine-Learning-Projects/blob/main/movie_recommendation_project.ipynb",
+                "Image":"images/project/mr.jpeg"
             },
             {
-                "title": "Sales Analysis",
-                "description": "A dashboard for analyzing sales data using pandas and matplotlib.",
-                "technologies": ["Python", "Pandas", "Matplotlib"],
-                "link": "https://example.com/datascience1",
-                "Image":"main.jpg"
+                "title": "Bank Customer Churn Prediction",
+                "description": "This project builds a model to predict bank customer churn.",
+                "technologies": ["Python", "colab", "pandas", "NumPy", "scikit-learn"],
+                "link": "https://github.com/sreenath-pydev/Machine-Learning-Projects/blob/main/Bank_customer_churn_model.ipynb",
+                "Image":"images/project/bc.jpeg"
+            },
+            {
+                "title": "Cancer Diagnosis Prediction",
+                "description": "This project uses logistic regression to classify breast tumors as benign or malignant.",
+                "technologies": ["Python", "colab", "pandas", "scikit-learn"],
+                "link": "https://github.com/sreenath-pydev/Machine-Learning-Projects/blob/main/Cancer_Prediction.ipynb",
+                "Image":"images/project/cp.jpeg"
+            },
+            {
+                "title": "chance of admission prediction",
+                "description": "This project uses linear regression to predict university admission based on key factors.",
+                "technologies": ["Python", "colab", "pandas"],
+                "link": "https://github.com/sreenath-pydev/Machine-Learning-Projects/blob/main/Chance_of_Admission_Prediction.ipynb",
+                "Image":"images/project/acp.jpeg"
+            },
+            {
+                "title": "Credit Card Default Prediction",
+                "description": "The Credit Card Default Prediction model successfully predicts customer defaults with high accuracy.",
+                "technologies": ["Python", "colab", "pandas","scikit-learn"],
+                "link": "https://github.com/sreenath-pydev/Machine-Learning-Projects/blob/main/Credit_Card_Default_Prediction.ipynb",
+                "Image":"images/project/creditcard.jpeg"
             }
         ]
     }
