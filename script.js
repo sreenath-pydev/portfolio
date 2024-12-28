@@ -76,7 +76,7 @@ fetch('data.json')
 // !Function to create a project card
 function createProjectCard(project, category) {
   const cardCol = document.createElement('div');
-  cardCol.classList.add('col-12', 'col-md-6', 'col-lg-3', 'mb-4', 'project');
+  cardCol.classList.add('col-12', 'col-md-6', 'col-lg-4', 'mb-4', 'project');
   cardCol.setAttribute('data-category', category);
 
   const card = document.createElement('div');
@@ -90,15 +90,15 @@ function createProjectCard(project, category) {
   const cardBody = document.createElement('div');
   cardBody.classList.add('card-img-overlay');
 
-  const title = document.createElement('h5');
+  const title = document.createElement('h3');
   title.classList.add('card-title');
   title.textContent = project.title;
 
-  const description = document.createElement('p');
+  const description = document.createElement('h3');
   description.classList.add('card-text');
   description.textContent = project.description;
 
-  const tech = document.createElement('p');
+  const tech = document.createElement('h4');
   tech.classList.add('card-text');
   tech.textContent = `Technologies: ${project.technologies.join(', ')}`;
 
@@ -255,3 +255,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 });
+

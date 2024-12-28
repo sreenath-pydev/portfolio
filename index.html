@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Sreenath - Portfolio</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-dark mt-5">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-body-dark mt-5 ">
             <div class="container">
               
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +46,8 @@
       <div class="row">
         <div class="col-lg-12 ">
           <img src="LinkedinProfile.png" alt="Profile Image">
-          <a class="name" href="index.html">Sreenath</a>
+          <div class="col-lg-12"><a class="name" href="index.html">Sreenath</a></div>
+          
           <!--Theme switch-->
           <label for="theme" class="theme"  id="theme">
             <span class="theme__toggle-wrap">
@@ -89,46 +94,48 @@
       </div>
     </div>
     <div class="col-lg-12 col-md-12 p-5">
-    <h1>What I'm Doing</h1>
-    <div class="row  row-cols-1 row-cols-md-2 g-4">
-      <div class="col-lg-6">
-        <div class="card">
-          <img src="LinkedinProfile.png" class="card-img-top img-fluid" alt="Description of the service">
-          <div class="card-body">
-            <h5 class="card-title">Web Development</h5>
-            <p class="card-text">Building responsive and modern websites using HTML, CSS, JavaScript, Django, and React.</p>
+      <h1 class="pb-3">What I'm Doing</h1>
+      <div class="row  row-cols-1 row-cols-md-2 g-4">
+        <div class="col-lg-6">
+          <div class="card">
+            <img src="images/what__i_do/fullstack.png" class="card-img-top img-fluid" alt="Description of the service">
+            <div class="card-body">
+              <h5 class="card-title">Full-Stack Development</h5>
+              <p class="card-text">Building dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card">
-          <img src="LinkedinProfile.png" class="card-img-top img-fluid" alt="Description of the service">
-          <div class="card-body">
-            <h5 class="card-title">API Integration</h5>
-            <p class="card-text">Integrating APIs to provide seamless and powerful functionalities for your applications.</p>
+        <div class="col-lg-6">
+          <div class="card">
+            <img src="images/what__i_do/webdev.png" class="card-img-top img-fluid" alt="Description of the service">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Developing dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card">
-          <img src="LinkedinProfile.png" class="card-img-top img-fluid" alt="Description of the service">
-          <div class="card-body">
-            <h5 class="card-title">E-commerce Solutions</h5>
-            <p class="card-text">Creating custom e-commerce platforms with advanced features like cart, payment, and user management.</p>
+        <div class="col-lg-6">
+          <div class="card">
+            <img src="images/what__i_do/frontent.png" class="card-img-top img-fluid" alt="Description of the service">
+            <div class="card-body">
+              <h5 class="card-title">Frontend Development</h5>
+              <p class="card-text">Creating visually appealing and user-friendly interfaces for web applications using HTML, CSS, and JavaScript.</p>
+            
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card">
-          <img src="LinkedinProfile.png" class="card-img-top img-fluid" alt="Description of the service">
-          <div class="card-body">
-            <h5 class="card-title">Custom Software</h5>
-            <p class="card-text">Developing tailored software solutions to meet your specific business needs.</p>
+        <div class="col-lg-6">
+          <div class="card">
+            <img src="images/what__i_do/api.png" class="card-img-top img-fluid" alt="Description of the service">
+            <div class="card-body">
+              <h5 class="card-title">API Inegration</h5>
+              <p class="card-text"> Integrating web applications with APIs to provide a seamless user experience.</p>
+            </div>
           </div>
-        </div>
+        </div>   
       </div>
-    </div>
-  </div>
+   
+   </div>
   </section>
   <!-- about Section End--> 
 
@@ -230,8 +237,8 @@
         <span class="project-filter-link actives" onclick="filterProjects('all', this)">All Projects</span>
         <span class="project-filter-link" onclick="filterProjects('Full Stack', this)">Full Stack</span>
         <span class="project-filter-link" onclick="filterProjects('Frontend', this)">Frontend</span>
+        <span class="project-filter-link" onclick="filterProjects('Backend', this)">Backend</span>
         <span class="project-filter-link" onclick="filterProjects('Machine Learning', this)">Machine Learning</span>
-        <span class="project-filter-link" onclick="filterProjects('Data Science', this)">Data Science</span>
       </div>
       
       <!--projects cards-->
@@ -259,12 +266,11 @@
           <textarea id="message" name="message" placeholder="Your Message"></textarea>
           <small class="error pb-2" id="message-error"></small>
           <button class="btn" type="submit">Send Message</button>
-          <!-- Success Message -->
-          <p id="success-message" class="p-5" style="color: green; display: none;">Your message has been sent successfully!</p>
           <!-- Loader -->
           <div class="loader " id="loader" ></div>
         </form>
-      
+      <!-- Success Message -->
+      <p id="success-message" class="p-5" style="color: green; display: none;">Your message has been sent successfully!</p>
    
   </section>
   <!--Connect me Section End-->
@@ -298,10 +304,15 @@
         <p>&copy; 2024 Sreenath Portfolio. All rights reserved.</p>
       </div>
     </footer>
-<!--Footer Section End-->
+    <!--Footer Section End-->
   </div>
   
   <!--Scripts-->
-        <script src="script.js"></script>
+       <script src="script.js"></script>
+         <!-- jquery js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- bootstrap js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        
       </body></html>

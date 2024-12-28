@@ -12,12 +12,12 @@
 }
 
 :root{
-    --primary-color: #ffffff;
+    --primary-color: #e0e0e0;
     --secondary-color: black;
 }
 .dark-theme{
     --primary-color: black;
-    --secondary-color: #ffffff;
+    --secondary-color: #e0e0e0;
 }
 
 html{
@@ -32,13 +32,14 @@ body{
     background-color: var(--primary-color);
     transition: background-color 0.1s ease, color 0.1s ease;
     color: var(--secondary-color);
-    
     flex-direction: column;
     display: flex;
 }
 .col-lg-9{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Navbar */
 .navbar a{
     font-size: 1.8rem;
     color: var(--secondary-color);
@@ -60,6 +61,7 @@ body{
 .nav-link.active, .navbar-nav .nav-link.show {
     color: var(--secondary-color)!important;
 }
+
 /* Left sidebar */
 .left-sidebar{
     text-align: center;
@@ -92,8 +94,8 @@ body{
 .left-sidebar .name:hover{
     transform: scale(1.1);
 }
+
 /* theme switch */
-/* Default */
 .theme__fill {
     pointer-events: none; /* Prevents this element from blocking clicks */
 }
@@ -204,7 +206,7 @@ body{
   }
   
   .theme__toggle {
-    background-color: hsl(48,90%,85%);
+    background-color: hsl(60, 5%, 93%);
     border-radius: 25% / 50%;
     border: 2px solid #b74b4b; 
     box-shadow: 0 0 0 0.125em var(--primaryT);
@@ -237,7 +239,7 @@ body{
   
   /* Checked */
   .theme__toggle:checked {
-    background-color: hsl(198,90%,15%);
+    background-color: hsl(195, 43%, 5%);
   }
   
   .theme__toggle:checked:before,
@@ -339,7 +341,6 @@ body{
 }
 
 /* about */
-
 #about{
     max-height: 600px;
     overflow-y: scroll;
@@ -381,6 +382,25 @@ body{
 
 .about-content p{
     font-size: 1.6rem;
+}
+#about .card{
+  height: 300px;
+  cursor: pointer;
+}
+#about .card:hover img{
+    box-shadow: 0 0 25px #b74b4b;
+
+}
+#about .card img{
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+#about .card img:hover{
+  transform: scale(1.05);
+  
 }
 
 .btn{
@@ -517,6 +537,13 @@ body{
   margin-bottom: -5px;
 }
 /* project */
+#projects-container{
+  height: 500px;
+  overflow-y: scroll;
+}
+#projects-container::-webkit-scrollbar {
+  display: none; 
+}
 #projects{
     height: 100vh;
 }
@@ -561,24 +588,53 @@ body{
 .col-9{
     overflow: hidden;
 }
-.card {
-    height: auto;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    border-radius: 10px;
+.project .card {
+  height: auto;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden; 
 }
-.card:hover{
-    transform: scale(1.05);
+
+.project .card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(100%); 
 }
-.card-img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin: auto;
-    
-    cursor: pointer;
-    transition: transform 0.3s ease;
+
+.project .card:hover .card-img {
+  transform: scale(1.05);
+  filter: brightness(20%);
+}
+
+.project .card-text{
+  display: none;
+  font-size: 12px;
+  font-weight: 300px;
+}
+.project .card-title{
+  display: none;
+  font-weight: 1000;
+}
+.project .card:hover .card-title{
+  display: block;
+}
+.project .card:hover .card-text{
+  display: block;
+}
+.project .card-img-overlay a{
+  text-decoration: none;
+  color: #f03355;
+  font-weight: 500px!important;
+  font-size: 20px;
+}
+.project .card-img-overlay a:hover{
+  text-decoration: underline;
 }
 /* connect me */
 #contact {
@@ -782,6 +838,7 @@ body{
     #projects-container{
         height: 500px;
         overflow-y: scroll;
+        
 
     }
     #projects{
