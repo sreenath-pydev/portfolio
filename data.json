@@ -76,28 +76,28 @@
                 "description": "This project recommends movies based on user preferences.",
                 "technologies": ["Python", "Pandas", "Keras", "NumPy", "scikit-learn"],
                 "link": "https://github.com/sreenath-pydev/Machine-Learning-Projects/blob/main/movie_recommendation_project.ipynb",
-                "Image":"images/project/mr.jpeg"
+                "Image":"images/project/movie_recommentation.png"
             },
             {
                 "title": "Bank Customer Churn Prediction",
                 "description": "This project builds a model to predict bank customer churn.",
                 "technologies": ["Python", "colab", "pandas", "NumPy", "scikit-learn"],
                 "link": "https://github.com/sreenath-pydev/Machine-Learning-Projects/blob/main/Bank_customer_churn_model.ipynb",
-                "Image":"images/project/bc.jpeg"
+                "Image":"images/project/bank_churn_prediction.png"
             },
             {
                 "title": "Cancer Diagnosis Prediction",
                 "description": "This project uses logistic regression to classify breast tumors as benign or malignant.",
                 "technologies": ["Python", "colab", "pandas", "scikit-learn"],
                 "link": "https://github.com/sreenath-pydev/Machine-Learning-Projects/blob/main/Cancer_Prediction.ipynb",
-                "Image":"images/project/cp.jpeg"
+                "Image":"images/project/cancer_prediction.png"
             },
             {
                 "title": "chance of admission prediction",
                 "description": "This project uses linear regression to predict university admission based on key factors.",
                 "technologies": ["Python", "colab", "pandas"],
                 "link": "https://github.com/sreenath-pydev/Machine-Learning-Projects/blob/main/Chance_of_Admission_Prediction.ipynb",
-                "Image":"images/project/acp.jpeg"
+                "Image":"images/project/admission_prediction.png"
             },
             {
                 "title": "Credit Card Default Prediction",
