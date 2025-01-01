@@ -40,7 +40,7 @@ body{
 }
 
 /* Navbar */
-.navbar a{
+.main-nav a{
     font-size: 1.8rem;
     color: var(--secondary-color);
     margin-left: 4rem;
@@ -49,16 +49,16 @@ body{
     border-bottom: 3px solid transparent;
 }
 
-.navbar a:hover,
-.navbar a.active{
+.main-nav a:hover,
+.main-nav a.active{
     color: var(--secondary-color);
     border-bottom: 3px solid #b74b4b;
 }
-.navbar .collapse{
+.main-nav .collapse{
     padding-left: 430px;
     right: 0px;
 }
-.nav-link.active, .navbar-nav .nav-link.show {
+.main-nav .nav-link.active, .main-nav .navbar-nav .nav-link.show {
     color: var(--secondary-color)!important;
 }
 
@@ -863,5 +863,43 @@ body{
     #contact h2{
         margin-top:0px;
     }
+    .sub-nav {
+      display: block!important;
+      background-color: var(--primary-color); 
+      position: fixed;
+      bottom: 0; 
+      width: 100%;
+      z-index: 1000; 
+      border-top: 2px solid #f03355; 
+      border-radius: 20px 20px 0px 0px;
+    }
     
+    .sub-nav .vertical-nav {
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+      justify-content: center;
+      list-style: none; 
+      padding: 0;
+      margin: 0;
+      width: 100%; 
+    }
+    
+    .sub-nav .nav-item {
+      flex: 1; 
+      text-align: center; 
+    }
+    
+    .sub-nav .nav-link {
+      display: block;
+      padding: 10px 0; 
+      text-decoration: none; 
+      color: var(--secondary-color); 
+      font-size: 1.5rem; 
+      font-weight: bold;
+      transition: color 0.3s, text-decoration 0.3s; 
+    }
+    .sub-nav .nav-link.active{
+      color: #b74b4b;
+    } 
 }
