@@ -1027,13 +1027,12 @@ body{
     .sub-nav .nav-link.active{
       color: #b74b4b;
     } 
-    .certificate .item{
-      width: auto;
-      height:auto;
-      margin: auto;
-      padding: auto;
-    }
     .what__i_do .card{
       width: auto;
+      height: auto;
+    }
+    .courses .item{
+      width: auto;
+      height:auto;
     }
 }
