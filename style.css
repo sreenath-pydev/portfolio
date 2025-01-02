@@ -1027,12 +1027,16 @@ body{
     .sub-nav .nav-link.active{
       color: #b74b4b;
     } 
+    .what__i_do .card{
+      height: 110px;
+      width: auto;
+    }
     .what__i_do .card:hover{
       width: auto;
-      height: auto;
+      height: 210px;
     }
     .what__i_do p {
-      font-size: small;
+      font-size: medium;
     }
     .courses .item{
       width: auto;
