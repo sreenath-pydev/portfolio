@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Sreenath - Portfolio</title>
 </head>
 <body>
@@ -55,277 +58,340 @@
         </nav>
     </header>
 
-  <div class="row container-fluid">
-    <div class="col-lg-3 left-sidebar ">
-      <!--left side section-->
-      <div class="row">
-        <div class="col-lg-12 ">
-          <img src="LinkedinProfile.png" alt="Profile Image">
-          <div class="col-lg-12"><a class="name" href="index.html">Sreenath</a></div>
-          
-          <!--Theme switch-->
-          <label for="theme" class="theme"  id="theme">
-            <span class="theme__toggle-wrap">
-              <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark" onclick="Changetheme()">
-              <span class="theme__fill"></span>
-              <span class="theme__icon">
-                <span class="theme__icon-part"></span>
-                <span class="theme__icon-part"></span>
-                <span class="theme__icon-part"></span>
-                <span class="theme__icon-part"></span>
-                <span class="theme__icon-part"></span>
-                <span class="theme__icon-part"></span>
-                <span class="theme__icon-part"></span>
-                <span class="theme__icon-part"></span>
-                <span class="theme__icon-part"></span>
-              </span>
-            </span>
-          </label>
-          <!--Theme switch End-->
-        </div>
-        <div class="col-lg-12">
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/sreenath-pydev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/sreenath-pydev" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://x.com/sreenathkk00" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/__sreenath_____/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=SreenathPydev@gmail.com" class="btn" target="_blank">Hire me</a> -->
-        </div>
-      </div>  
-    </div>
-    <!--Right side section-->
-    <div class="col-lg-9 container">
-   <!-- about Section -->
-   <section id="about">
-    <div class="row p-5 mb-5 mt-5 container">
-      <div class="col-lg-12 about-content">
-        <h1>Hi, It's <span>Sreenath</span></h1>
-        <h3 class="typing-text">I'm a <span></span></h3>
-        <p>
-          I’m a Full Stack Developer skilled in Python, Django, React, and web technologies like HTML, CSS, and JavaScript. I build dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs. Passionate about solving problems and constantly learning, I strive to deliver high-quality solutions that drive results.
-        </p>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=SreenathPydev@gmail.com" class="btn" target="_blank">Hire me</a>
+    <div class="row container-fluid">
+<!--left side section-->
+      <div class="col-lg-3 left-sidebar">
+        <div class="row">
+            <div class="col-lg-12 ">
+              <img src="LinkedinProfile.png" alt="Profile Image">
+              <div class="col-lg-12"><a class="name" href="index.html">Sreenath</a></div>
+              <!--Theme switch-->
+              <label for="theme" class="theme"  id="theme">
+                <span class="theme__toggle-wrap">
+                  <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark" onclick="Changetheme()">
+                  <span class="theme__fill"></span>
+                  <span class="theme__icon">
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                    <span class="theme__icon-part"></span>
+                  </span>
+                </span>
+              </label>
+              <!--Theme switch End-->
+            </div>
+            <div class="col-lg-12">
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sreenath-pydev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/sreenath-pydev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/sreenathkk00" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/__sreenath_____/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            </div>
+        </div>  
       </div>
-    </div>
-    <div class="col-lg-12 col-md-12 p-5">
-      <h1 class="pb-3">What I'm Doing</h1>
-      <div class="row  row-cols-1 row-cols-md-2 g-4">
-        <div class="col-lg-6">
-          <div class="card">
-            <img src="images/what__i_do/fullstack.png" class="card-img-top img-fluid" alt="Description of the service">
-            <div class="card-body">
-              <h5 class="card-title">Full-Stack Development</h5>
-              <p class="card-text">Building dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs.</p>
-            </div>
-          </div>
+<!--Right side section-->
+      <div class="col-lg-9 container">
+<!-- about Section -->
+    <section id="about">
+      <div class="row p-5 mb-5 mt-5 container">
+        <div class="col-lg-12 about-content">
+          <h1>Hi, It's <span>Sreenath</span></h1>
+          <h3 class="typing-text">I'm a <span></span></h3>
+          <p>
+            I’m a Full Stack Developer skilled in Python, Django, React, and web technologies like HTML, CSS, and JavaScript. I build dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs. Passionate about solving problems and constantly learning, I strive to deliver high-quality solutions that drive results.
+          </p>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=SreenathPydev@gmail.com" class="btn" target="_blank">Hire me</a>
         </div>
-        <div class="col-lg-6">
-          <div class="card">
-            <img src="images/what__i_do/webdev.png" class="card-img-top img-fluid" alt="Description of the service">
-            <div class="card-body">
-              <h5 class="card-title">Web Development</h5>
-              <p class="card-text">Developing dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card">
-            <img src="images/what__i_do/frontent.png" class="card-img-top img-fluid" alt="Description of the service">
-            <div class="card-body">
-              <h5 class="card-title">Frontend Development</h5>
-              <p class="card-text">Creating visually appealing and user-friendly interfaces for web applications using HTML, CSS, and JavaScript.</p>
-            
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card">
-            <img src="images/what__i_do/api.png" class="card-img-top img-fluid" alt="Description of the service">
-            <div class="card-body">
-              <h5 class="card-title">API Inegration</h5>
-              <p class="card-text"> Integrating web applications with APIs to provide a seamless user experience.</p>
-            </div>
-          </div>
-        </div>   
       </div>
-   
-   </div>
-  </section>
-  <!-- about Section End--> 
-
-  <!--Resume Section-->
-  <section id="resume">
-    <div class=" row  container p-5 mt-5 resume" >
-      <!--Education and Experience Section-->
-      <div class="col-lg-12" id="education">
-        <div class="row pb-5">
-            <div class="col">
-              <h1 class="pb-3"><b>Education</b></h1>
-              <ul>
-                <li class="pb-3"><h3>Diploma in Tool & Die Engineering</h3>
-               <h4>Kerala Gov Polytechnic College <br> Kozhikode, Kerala • 2020</h4></li>
-
-              <li><h3>Plus Two</h3>
-                <h4> Nanminda Higher Secondary School <br> Nanminda, Kozhikode • 2016</h4></li>
-              </ul>
+      <div class="col-lg-12 col-md-12 p-5">
+        <h1 class="pb-3">What I'm Doing</h1>
+        <!-- What I Do Section -->
+        <div class="row what__i_do">
+          <!-- fullstack dev -->
+          <div class="col-lg-6" >
+        <div class="card" style="background-image: url(images/what__i_do/fullstack.png);">
+            <div class="align">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
             </div>
-            <div class="col">
-              <h1 class="pb-3"><b>Experience</b></h1>
-              <ul>
-                <li class="pb-3"><h3>Python & Data Science Intern</h3>
-               <h4>Ecraftz Info Solutions <br> Kozhikode, Kerala • 2023</h4></li>
-              </ul>
-              <div class="download">
-                <a href="Sreenath_Resume .pdf" class="btn" target="_blank">Download CV</a>
+            <h1>Full-Stack Development</h1>
+            <p><b>
+              Building dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs.
+            </b></p>
+        </div>
+      </div>
+      <!-- web dev -->
+      <div class="col-lg-6 ">
+        <div class="card" style="background-image: url(images/what__i_do/webdev.png);">
+          <div class="align">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+          </div>
+          <h1>Web Development</h1>
+          <p><b>
+            Developing dynamic and responsive web applications with a focus on clean, efficient code and user-friendly designs.
+          </b></p>
+      </div>
+      </div>
+      <!-- frontend dev -->
+      <div class="col-lg-6">
+        <div class="card" style="background-image: url(images/what__i_do/frontent.png);">
+          <div class="align">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+          </div>
+          <h1>Frontend Development</h1>
+          <p><b>
+            Creating visually appealing and user-friendly interfaces for web applications using HTML, CSS, and JavaScript.
+          </b></p>
+      </div>
+      </div>
+      <!-- api integration -->
+      <div class="col-lg-6 ">
+        <div class="card" style="background-image: url(images/what__i_do/api.png);">
+          <div class="align">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+          </div>
+          <h1>API Inegration</h1>
+          <p><b>
+            Integrating web applications with APIs to provide a seamless user experience.
+          </b></p>
+      </div>
+      </div>
+        </div>
+<!-- What I Do Section  end-->
+        <!-- Courses Carousel -->
+        <div class="p-3 mt-3"><h1>Courses</h1></div>
+        <div class="owl-carousel owl-theme courses">
+          <!-- Greate Learning -->
+          <div class="item">
+            <div class="cards ">
+              <div class="img"><img src="images/courses/greatelearning.png"></div>
+                <div class="textBox">
+                <div class="textContent">
+                    <p class="h1">Data Visualization With Power BI</p>
+                    <a href="https://drive.google.com/drive/folders/1bSkYn3PLr-6rEmC3YZsaROyU4iDFC0Xr">View</a>
+                  </div>
+                <p class="p">Greate Learning</p>
+                <div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <!-- YBI Foundation-->
+          <div class="item">
+            <div class="cards">
+              <div class="img"><img src="images/courses/ybi.png"></div>
+              <div class="textBox">
+                <div class="textContent">
+                  <p class="h1">Programming in Python</p>
+                  <a href="https://www.ybifoundation.org/certificate-validation?credentialId=24BSN3Z4JSQRJ">View</a>
+                </div>
+                <p class="p">YBI Foundation</p>
+              <div>
+            </div></div></div>
+          </div>
+          <!-- Coursera-->
+          <div class="item">
+            <div class="cards">
+              <div class="img"><img src="images/courses/meta.png"></div>
+              <div class="textBox">
+                <div class="textContent">
+                  <p class="h1">Programming in Python</p>
+                  <a href="https://www.coursera.org/account/accomplishments/verify/RK6HJD7ZA3SE">View</a>
+                </div>
+                <p class="p">Meta</p>
+              <div>
+            </div></div></div>
+          </div>
+        </div>
+        <!-- Courses Carousel End -->
+    </div>
+    </section>
+<!-- about Section End--> 
+
+<!--Resume Section-->
+    <section id="resume">
+      <div class=" row  container p-5 mt-5 resume" >
+        <!--Education and Experience Section-->
+        <div class="col-lg-12" id="education">
+          <div class="row pb-5">
+              <div class="col">
+                <h1 class="pb-3"><b>Education</b></h1>
+                <ul>
+                  <li class="pb-3"><h3>Diploma in Tool & Die Engineering</h3>
+                <h4>Kerala Gov Polytechnic College <br> Kozhikode, Kerala • 2020</h4></li>
+                <li><h3>Plus Two</h3>
+                  <h4> Nanminda Higher Secondary School <br> Nanminda, Kozhikode • 2016</h4></li>
+                </ul>
               </div>
-            </div>
-            
+              <div class="col">
+                <h1 class="pb-3"><b>Experience</b></h1>
+                <ul>
+                  <li class="pb-3"><h3>Python & Data Science Intern</h3>
+                <h4>Ecraftz Info Solutions <br> Kozhikode, Kerala • 2023</h4></li>
+                </ul>
+                <div class="download">
+                  <a href="Sreenath_Resume .pdf" class="btn" target="_blank">Download CV</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!--Skills Section-->
+        <div class="col-lg-12 mt-5" id="skills">
+        <h1 class="pb-3"><b>Skills</b></h1>
+        <!-- Languages Section -->
+        <h2>Languages</h2>
+        <h4>Python 80%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
+        </div>
+        <h4>HTML 84%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 84%; background-color: #b74b4b;"></div>
+        </div>
+        <h4>CSS 85%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 85%; background-color: #b74b4b;"></div>
+        </div>
+        <h4>JavaScript 70%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 70%; background-color: #b74b4b;"></div>
+        </div>
+        <!-- Frameworks Section -->
+        <h2>Frameworks</h2>
+        <h4>Django 80%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
+        </div>
+        <h4>React 75%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 75%; background-color: #b74b4b;"></div>
+        </div>
+        <h4>Bootstrap 75%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 75%; background-color: #b74b4b;"></div>
+        </div>
+        <!--Database section-->
+        <h2>Databases</h2>
+        <h4>PostgreSQL 80%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
+        </div>
+        <!-- Tools Section -->
+        <h2>Developer Tools</h2>
+        <h4>VS Code 85%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 85%; background-color: #b74b4b;"></div>
+        </div>
+        <!-- Version Control Section -->
+        <h2>Version Control</h2>
+        <h4>Git 80%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
+        </div>
+        <h4>GitHub 80%</h4>
+        <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
+        </div>
         </div>
       </div>
-      <!--Skills Section-->
-      <div class="col-lg-12 mt-5" id="skills">
-      <h1 class="pb-3"><b>Skills</b></h1>
-      <!-- Languages Section -->
-      <h2>Languages</h2>
-      <h4>Python 80%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
-      </div>
-      <h4>HTML 84%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 84%; background-color: #b74b4b;"></div>
-      </div>
-      <h4>CSS 85%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 85%; background-color: #b74b4b;"></div>
-      </div>
-      <h4>JavaScript 70%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 70%; background-color: #b74b4b;"></div>
-      </div>
-      <!-- Frameworks Section -->
-      <h2>Frameworks</h2>
-      <h4>Django 80%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
-      </div>
-      <h4>React 75%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 75%; background-color: #b74b4b;"></div>
-      </div>
-      <h4>Bootstrap 75%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 75%; background-color: #b74b4b;"></div>
-      </div>
-      <!--Database section-->
-      <h2>Databases</h2>
-      <h4>PostgreSQL 80%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
-      </div>
-      <!-- Tools Section -->
-      <h2>Developer Tools</h2>
-      <h4>VS Code 85%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 85%; background-color: #b74b4b;"></div>
-      </div>
-      <!-- Version Control Section -->
-      <h2>Version Control</h2>
-      <h4>Git 80%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
-      </div>
-      <h4>GitHub 80%</h4>
-      <div class="progress mb-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 80%; background-color: #b74b4b;"></div>
-      </div>
-      </div>
-    </div>
-  </section>
-  <!--Resume Section End-->
+    </section>
+<!--Resume Section End-->
 
-  <!-- Project Section -->
-  <section id="projects">
-    <div class="row  p-5 mt-5"  style="margin: auto;">
-      <div class="project_filter mb-5">
-        <span class="project-filter-link actives" onclick="filterProjects('all', this)">All Projects</span>
-        <span class="project-filter-link" onclick="filterProjects('Full Stack', this)">Full Stack</span>
-        <span class="project-filter-link" onclick="filterProjects('Frontend', this)">Frontend</span>
-        <span class="project-filter-link" onclick="filterProjects('Backend', this)">Backend</span>
-        <span class="project-filter-link" onclick="filterProjects('Machine Learning', this)">Machine Learning</span>
+<!-- Project Section -->
+    <section id="projects">
+      <div class="row  p-5 mt-5"  style="margin: auto;">
+        <div class="project_filter mb-5">
+          <span class="project-filter-link actives" onclick="filterProjects('all', this)">All Projects</span>
+          <span class="project-filter-link" onclick="filterProjects('Full Stack', this)">Full Stack</span>
+          <span class="project-filter-link" onclick="filterProjects('Frontend', this)">Frontend</span>
+          <span class="project-filter-link" onclick="filterProjects('Backend', this)">Backend</span>
+          <span class="project-filter-link" onclick="filterProjects('Machine Learning', this)">Machine Learning</span>
+        </div>
+        <!--projects cards-->
+        <div id="projects-container" class="row"></div>
       </div>
-      
-      <!--projects cards-->
-      <div id="projects-container" class="row"></div>
-    </div>
-  </section>
-  <!-- Project Section End-->
-  
-  <!--Connect me Section -->
-  <section id="contact" class="container p-5">
+    </section>
+<!-- Project Section End-->
     
-      <h2>Get in Touch</h2>
-      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" style="position: relative;">
-        <input type="hidden" name="access_key" value="9b5f76de-2bae-4405-bbf1-d466df17e154">
-        <div class="row">
-              <div class="col-md-6">
-                  <input type="text" id="name" name="name" placeholder="Your Name">
-                  <small class="error pb-3" id="name-error"></small>
-              </div>
-              <div class="col-md-6">
-                  <input type="email" id="email" name="email" placeholder="your@email.com">
-                  <small class="error pb-2" id="email-error"></small>
-              </div>
-          </div>
-          <textarea id="message" name="message" placeholder="Your Message"></textarea>
-          <small class="error pb-2" id="message-error"></small>
-          <button class="btn" type="submit">Send Message</button>
-          <!-- Loader -->
-          <div class="loader " id="loader" ></div>
-        </form>
-      <!-- Success Message -->
-      <p id="success-message" class="p-5" style="color: green; display: none;">Your message has been sent successfully!</p>
-   
-  </section>
-  <!--Connect me Section End-->
-    </div>
-    <!--Footer Section-->
-    <footer class="footer container col-lg-12">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4>About Me</h4>
-            <p>Passionate Python developer skilled in writing clean, efficient code and solving problems. Proactive, detail-oriented, and eager to tackle challenges while staying updated on the latest technologies and contributing to innovative projects.</p>
-          </div>
-          <div class="col-md-4">
-            <h4>Get in Touch</h4>
-            <ul>
-              <li><a href="https://www.linkedin.com/in/sreenath-pydev/">LinkedIn</a></li>
-              <li><a href="https://github.com/sreenath-pydev">GitHub</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4>Follow Me</h4>
-            <ul>
-              <li><a href="https://www.instagram.com/__sreenath_____/">Instagram</a></li>
-              <li><a href="https://x.com/sreenathkk00">Twitter</a></li>
-              <li><a href="https://www.facebook.com">Facebook</a></li>
-            </ul>
+<!--Connect me Section -->
+    <section id="contact" class="container p-5">
+        <h2>Get in Touch</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" style="position: relative;">
+          <input type="hidden" name="access_key" value="9b5f76de-2bae-4405-bbf1-d466df17e154">
+          <div class="row">
+                <div class="col-md-6">
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <small class="error pb-3" id="name-error"></small>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                    <small class="error pb-2" id="email-error"></small>
+                </div>
+            </div>
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            <small class="error pb-2" id="message-error"></small>
+            <button class="btn" type="submit">Send Message</button>
+            <!-- Loader -->
+            <div class="loader " id="loader" ></div>
+          </form>
+        <!-- Success Message -->
+        <p id="success-message" class="p-5" style="color: green; display: none;">Your message has been sent successfully!</p>
+    </section>
+<!--Connect me Section End-->
+      </div>
+<!--Footer Section-->
+      <footer class="footer container col-lg-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>About Me</h4>
+              <p>Passionate Python developer skilled in writing clean, efficient code and solving problems. Proactive, detail-oriented, and eager to tackle challenges while staying updated on the latest technologies and contributing to innovative projects.</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Get in Touch</h4>
+              <ul>
+                <li><a href="https://www.linkedin.com/in/sreenath-pydev/">LinkedIn</a></li>
+                <li><a href="https://github.com/sreenath-pydev">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Follow Me</h4>
+              <ul>
+                <li><a href="https://www.instagram.com/__sreenath_____/">Instagram</a></li>
+                <li><a href="https://x.com/sreenathkk00">Twitter</a></li>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2024 Sreenath Portfolio. All rights reserved.</p>
-      </div>
-    </footer>
-    <!--Footer Section End-->
-  </div>
+        <div class="copyright">
+          <p>&copy; 2024 Sreenath Portfolio. All rights reserved.</p>
+        </div>
+      </footer>
+<!--Footer Section End-->
+    </div>
   
-  <!--Scripts-->
-       <script src="script.js"></script>
-         <!-- jquery js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!-- bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      </body></html>
+<!--Scripts-->
+    <!-- jquery js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- owl carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- script js -->
+    <script src="script.js"></script>
+</body>
+</html>

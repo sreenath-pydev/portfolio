@@ -383,24 +383,149 @@ body{
 .about-content p{
     font-size: 1.6rem;
 }
-#about .card{
-  height: 300px;
-  cursor: pointer;
+ 
+/* what i do */
+.what__i_do .card {
+  background-size: cover; 
+  background-position: center; 
+  width: 400px;
+  height: 120px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+  border-left: 2px rgba(255, 255, 255, 0.545) outset;
+  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+  transform: skewX(10deg);
+  transition: .4s;
+  overflow: hidden;
+  color: white;
+  margin-left: 50px;
+  margin-bottom: 80px;
+  text-align: center;
 }
-#about .card:hover img{
-    box-shadow: 0 0 25px #b74b4b;
-
+.what__i_do p {
+  font-size: medium;
 }
-#about .card img{
-    width: 100%;
-    height: 80%;
-    object-fit: fill;
-    border-radius: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-#about .card img:hover{
+.what__i_do .card:hover {
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: overlay; 
   transform: scale(1.05);
-  
+  height: 200px;
+  transform: skew(0deg);
+}
+
+.what__i_do .card .align {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: flex-start;
+}
+
+.what__i_do .card .red {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff605c;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.what__i_do .card .yellow {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffbd44;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.what__i_do .card .green {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00ca4e;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.what__i_do .card h1 {
+  text-align: center;
+  margin: 1.3rem;
+  color: rgb(255, 243, 243);
+  text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* Owl Carousel */
+.courses .item{
+  width: 450px;
+  height:110px;
+  margin: 10px;
+  padding: 10px;
+  }
+.courses .cards {
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease-in-out;
+  border: 2px solid #b74b4b;
+}
+
+.courses .cards:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.courses .img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.courses .owl-item img {
+  border-radius: 10px;
+}
+
+.courses .cards:hover > .img {
+  transition: 0.5s ease-in-out;
+}
+
+.courses .textBox {
+  width: calc(100% - 90px);
+  margin-left: 5px;
+  font-family: 'Poppins' sans-serif;
+}
+
+.courses .textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0px -12px 0px 0px;
+}
+
+.courses a {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #712020;
+  margin-right: 10px;
+}
+.courses a:hover{
+  border-bottom: 2px solid #b74b4b;
+}
+.courses .h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.courses .p {
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .btn{
@@ -902,4 +1027,13 @@ body{
     .sub-nav .nav-link.active{
       color: #b74b4b;
     } 
+    .certificate .item{
+      width: auto;
+      height:auto;
+      margin: auto;
+      padding: auto;
+    }
+    .what__i_do .card{
+      width: auto;
+    }
 }
