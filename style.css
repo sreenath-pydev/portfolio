@@ -1031,6 +1031,9 @@ body{
       width: auto;
       height: auto;
     }
+    .what__i_do p {
+      font-size: small;
+    }
     .courses .item{
       width: auto;
       height:auto;
