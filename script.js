@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Owl Carousel
+// Owl Carousel for Courses
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
@@ -276,4 +276,22 @@ $('.owl-carousel').owlCarousel({
       }
   }
 })
+
+// certificate
+const certificatesContainer = document.querySelector('.certificates'); 
+fetch('data.json')
+  .then((response) => response.json())
+  .then((data) => {
+    data.certifications.forEach((certificate) => {
+      const certificateDiv = document.createElement("div");
+      certificateDiv.classList.add("col-lg-3", "col-md-6", "col-sm-6", "mb-4", "certificate-card");
+      certificateDiv.innerHTML = `
+        <a href="${certificate.link}" target="_blank" rel="noopener noreferrer">
+          <img src="${certificate.Image}" alt="${certificate.title}" class="img-fluid card-img-top">
+        </a>`;
+      
+      certificatesContainer.appendChild(certificateDiv);
+    });
+  })
+  .catch((error) => console.error('Error fetching data:', error));
 

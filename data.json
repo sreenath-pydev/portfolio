@@ -107,6 +107,28 @@
                 "Image":"images/project/creditcard.jpeg"
             }
         ]
-    }
+    },
+    "certifications" : [
+        {
+            "title": "Python data science",
+            "link": "https://drive.google.com/file/d/18GhDkXdOr2gPAZ5brwIMmLrbSKEQKe9-/view?usp=sharing",
+            "Image":"images/certification/Ecraftz.png"
+        },
+        {
+            "title": "Programming In Python",
+            "link": "https://www.coursera.org/account/accomplishments/verify/RK6HJD7ZA3SE",
+            "Image":"images/certification/meta.png"
+        },
+        {
+            "title": "Python Programming Internship",
+            "link": "https://www.ybifoundation.org/certificate-validation?credentialId=24BSN3Z4JSQRJ",
+            "Image":"images/certification/ybi.png"
+        },
+        {
+            "title": "Data Visualization With Power BI",
+            "link": "https://drive.google.com/file/d/1H3fyV02zSnSyOa0wvcl-967okusM5kPr/view?usp=sharing",
+            "Image":"images/certification/GreatLearning.png"
+        }
+    ]
     
 }
