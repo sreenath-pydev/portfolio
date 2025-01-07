@@ -13,6 +13,7 @@ You can view the live version of my portfolio website here:
 - **AI Chatbot**: Interactive assistant to guide visitors through the website using the Chatling AI platform.
 - **Contact Page**: Visitors can send messages directly to my email.
 - **Hire Me Button**: Allows recruiters to send job offers directly via Gmail.
+- **Dark Mode/Light Mode**: Toggle between dark and light themes for a customizable viewing experience.
 - **Responsive Design**: Optimized for all devices to ensure a seamless user experience.
 
 ## Technologies Used
