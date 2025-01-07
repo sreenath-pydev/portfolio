@@ -4,7 +4,7 @@
 This repository contains the source code for my personal portfolio website, showcasing my skills, projects, and experience. The website features an AI chatbot assistant, a contact page for direct messages, and a "Hire Me" functionality.
 
 You can view the live version of my portfolio website here:  
-[Portfolio Website](https://sreenath-pydev.github.io/portfolio-website/)
+[Portfolio Website](https://sreenath-pydev.github.io/sreenath.portfolio)
 ## Features
 
 - **Home Page**: Introduction to who I am and what I do.
@@ -31,7 +31,7 @@ You can view the live version of my portfolio website here:
 ## Deployment
 
 This portfolio website is live on GitHub Pages. You can view it here:  
-[Portfolio Website](https://sreenath-pydev.github.io/portfolio-website/)
+[Portfolio Website](https://sreenath-pydev.github.io/sreenath.portfolio)
 
 ## Contributing
 
