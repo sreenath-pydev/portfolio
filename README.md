@@ -4,7 +4,7 @@
 This repository contains the source code for my personal portfolio website, showcasing my skills, projects, and experience. The website features an AI chatbot assistant, a contact page for direct messages, and a "Hire Me" functionality.
 
 You can view the live version of my portfolio website here:  
-[Portfolio Website](https://sreenath-pydev.github.io/portfolio-website/)
+[Portfolio Website](https://sreenath-pydev.github.io/sreenath.portfolio)
 ## Features
 
 - **Home Page**: Introduction to who I am and what I do.
@@ -13,6 +13,7 @@ You can view the live version of my portfolio website here:
 - **AI Chatbot**: Interactive assistant to guide visitors through the website using the Chatling AI platform.
 - **Contact Page**: Visitors can send messages directly to my email.
 - **Hire Me Button**: Allows recruiters to send job offers directly via Gmail.
+- **Dark Mode/Light Mode**: Toggle between dark and light themes for a customizable viewing experience.
 - **Responsive Design**: Optimized for all devices to ensure a seamless user experience.
 
 ## Technologies Used
@@ -31,7 +32,7 @@ You can view the live version of my portfolio website here:
 ## Deployment
 
 This portfolio website is live on GitHub Pages. You can view it here:  
-[Portfolio Website](https://sreenath-pydev.github.io/portfolio-website/)
+[Portfolio Website](https://sreenath-pydev.github.io/sreenath.portfolio)
 
 ## Contributing
 
