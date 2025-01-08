@@ -721,7 +721,7 @@ body{
     color: #b74b4b;
 }
 .project-filter-link {
-    color: var(--secondary-color); 
+    color: #000; 
     text-decoration: none;
   }
   
@@ -1006,6 +1006,7 @@ body{
     }
     #projects .dropdown{
       display: block;
+      color: #000;
     }
     #projects .dropdown .dropdown-menu{
       width: 90%;
