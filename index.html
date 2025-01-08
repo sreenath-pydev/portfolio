@@ -40,7 +40,7 @@
             </div>
         </nav>
         <!-- Navbar second-->
-        <nav class="navbar sub-nav navbar-expand-lg bg-body-dark" style="display: none;">
+        <nav class="sub-nav" style="display: none;">
           <div class="container">
             <ul class="navbar-nav vertical-nav">
               <li class="nav-item">
@@ -326,6 +326,19 @@
           <span class="project-filter-link" onclick="filterProjects('Frontend', this)">Frontend</span>
           <span class="project-filter-link" onclick="filterProjects('Backend', this)">Backend</span>
           <span class="project-filter-link" onclick="filterProjects('Machine Learning', this)">Machine Learning</span>
+        </div>
+        <!-- Dropdown for small screens -->
+        <div class="dropdown mb-5">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </button>
+          <ul class="dropdown-menu">
+            <li><span class="project-filter-link actives" onclick="filterProjects('all', this)">All Projects</span></li>
+            <li><span class="project-filter-link" onclick="filterProjects('Full Stack', this)">Full Stack</span></li>
+            <li><span class="project-filter-link" onclick="filterProjects('Frontend', this)">Frontend</span></li>
+            <li><span class="project-filter-link" onclick="filterProjects('Backend', this)">Backend</span></li>
+            <li> <span class="project-filter-link" onclick="filterProjects('Machine Learning', this)">Machine Learning</span></li>
+          </ul>
         </div>
         <!--projects cards-->
         <div id="projects-container" class="row"></div>
