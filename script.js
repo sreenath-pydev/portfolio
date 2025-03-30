@@ -295,3 +295,12 @@ fetch('data.json')
   })
   .catch((error) => console.error('Error fetching data:', error));
 
+// Click event tracking
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    gtag('event', 'click', {
+      'event_category': 'Link',
+      'event_label': link.href
+    });
+  });
+});
