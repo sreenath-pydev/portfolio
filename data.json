@@ -19,8 +19,15 @@
                 "title": "Portfolio Website",
                 "description": "A personal portfolio showcasing projects and skills.",
                 "technologies": ["HTML", "CSS", "JavaScript"],
-                "link": "https://sreenath-pydev.github.io/sreenath.portfolio",
+                "link": "https://sreenath-pydev.github.io/portfolio",
                 "Image":"images/project/portfolio.png"
+            },
+	    {
+                "title": "Portfolio Website",
+                "description": "A personal portfolio showcasing projects and skills.",
+                "technologies": ["React.js", "TailwindCSS", "JavaScript"],
+                "link": "https://sreeragunniacca.github.io/webpage/",
+                "Image":"images/project/sreeragwebpage.png"
             }  
         ],
         "Frontend": [
